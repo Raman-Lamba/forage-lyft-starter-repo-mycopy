@@ -17,7 +17,7 @@ from datetime import timedelta
 
 class SpindlerBattery(Battery):
     def __init__(self, last_service_date):
-        service_interval = timedelta(days=2 * 365)  # Equivalent of 2 years in days
+        service_interval = timedelta(days=3 * 365)  # Equivalent of 3 years in days
         super().__init__(last_service_date, service_interval)
         self._last_service_date = last_service_date
         self._service_interval = service_interval
